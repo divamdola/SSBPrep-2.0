@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectDatabase = () => {
   mongoose
-    .connect(process.env.DB_LOCAL_URI) // No need for extra options
+    .connect('mongodb+srv://divyanshuamdola01:Dippudon123@ssbprep-database.i19cx.mongodb.net/') // No need for extra options
     .then(() => console.log("MongoDB Database Connected"))
     .catch((err) => console.error("MongoDB Connection Failed:", err.message));
 };
